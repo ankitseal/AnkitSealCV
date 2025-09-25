@@ -1,0 +1,153 @@
+% !TeX program = xelatex
+\documentclass[11pt,a4paper,sans]{moderncv} % keep a valid base size
+
+% ---- Slight size bump while staying moderncv-safe ----
+\usepackage{anyfontsize}
+\AtBeginDocument{%
+  \fontsize{11pt}{13pt}\selectfont
+  \recomputelengths
+}
+
+% ---- Theme ----
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\nopagenumbers{}
+
+% ---- Encoding & Layout ----
+\usepackage[scale=0.90]{geometry}
+\setlength{\hintscolumnwidth}{2.9cm}
+\usepackage{enumitem}
+\setlist[itemize]{topsep=3pt,itemsep=3pt,parsep=0pt,leftmargin=10pt}
+\usepackage{ragged2e}
+
+% ---- Emphasis macro (ATS-safe: bold text only) ----
+\newcommand{\kw}[1]{\textbf{#1}}
+
+% ---- Hanging-indent skill macro (used by Key & Technical Skills) ----
+\newlength{\skilllabelwd}
+\newcommand{\skill}[2]{%
+  \par\noindent
+  \hangindent=\dimexpr\skilllabelwd+1.2em\relax
+  \hangafter=1
+  \makebox[\skilllabelwd][l]{\textbf{#1}}%
+  \hspace{1.2em}#2\par\vspace{2pt}
+}
+
+% ---- Identity ----
+\name{Ankit}{Seal}
+\title{Architecting AI, IIoT \& Data Platforms from Edge to Cloud}
+\address{Bristol, UK}
+\phone[mobile]{+44 7454 361133}
+\email{ankit.seal@gmail.com}
+\social[linkedin]{ankitseal}
+
+% ---- ATS-friendly PDF metadata (prefilled) ----
+\makeatletter
+\AtBeginDocument{%
+  \hypersetup{
+    pdftitle={Architecting AI, IIoT \& Data Platforms from Edge to Cloud},
+    pdfauthor={Ankit Seal},
+    pdfsubject={Curriculum Vitae},
+    pdfkeywords={AI Solutions Architect, Industrial IoT, IIoT, OT/IT, Edge Computing, Cloud, OEE, Predictive Maintenance, Quality Analytics, Energy Optimisation, ISA-95, IEC 62443, ISO 27001, Node-RED, Docker, Siemens Insights Hub}
+  }%
+}
+\makeatother
+
+\begin{document}
+\makecvtitle
+\vspace*{-1.5\baselineskip} % tighten gap before the first section
+
+% ---------- SUMMARY ----------
+\section{Professional Summary}
+\begin{justify}
+Senior \kw{Industry~4.0} \& \kw{Digital Factory} leader and \kw{IoT Solution Architect} delivering end-to-end \kw{IIoT}, \kw{edge}, and \kw{IT/OT convergence} solutions from presales and solution design through implementation and post-deployment support. I design scalable, secure digital architectures that integrate \kw{PLCs/SCADA/MES} with analytics platforms to enable \kw{predictive maintenance}, \kw{OEE} improvement, \kw{energy optimisation}, and real-time insights. Well-versed in translating business goals into executable roadmaps and measurable outcomes, I build practical, deployable, and innovative solutions across embedded systems, machine vision, data processing, and product design. Passionate about advancing \kw{AI in manufacturing} to create future-ready, intelligent, and agile factories.
+\end{justify}
+
+% ---------- EXPERIENCE ----------
+\section{Experience}
+\cventry{2023--Present}{Senior Industrial IoT Applications Consultant \& Solutions Architect}{CAD\,-\,IT UK}{}{}{
+\begin{itemize}
+  \item \kw{System \& Architecture Design:} Defined \kw{IIoT} reference architectures, onboarding playbooks, and \kw{ISA-95} data models; established standards for \kw{IT/OT} connectivity and vendor integration.
+  \item \kw{Data Strategy \& Analytics:} Designed pipelines to normalise \kw{OPC UA}/\kw{MQTT}/\kw{Modbus} telemetry and integrated historians/time-series data into \kw{Siemens Insights Hub}, enabling \kw{predictive maintenance}, \kw{OEE}, and quality insights.
+  \item \kw{Scalability \& Performance:} Built containerised \kw{edge gateways} and services (\kw{Docker}, \kw{Node-RED}, \kw{Python}) for real-time, high-performance industrial data acquisition and analytics across \kw{hundreds of assets}.
+  \item \kw{Collaboration \& Leadership:} Coordinated production, IT, maintenance, and vendor teams; ran discovery workshops and adoption programmes; produced solution documentation and facilitated knowledge transfer.
+  \item \kw{Strategic Partnership:} Delivered an \kw{IIoT factory} solution for a \kw{global aerospace manufacturer}, enabling secure \kw{IT/OT convergence}, real-time analytics, and digital transformation in a complex manufacturing environment.
+  \item \kw{Security \& Resilience:} Applied \kw{IEC\,62443} and \kw{ISO\,27001}-aligned principles for data segregation, access control, and risk-aware monitoring.
+\end{itemize}
+}
+
+\cventry{2022--2023}{IT Solutions Technical Analyst}{Bristol Water}{}{}{
+\begin{itemize}
+  \item \kw{Automation \& Process Optimisation:} Designed and deployed \kw{RPA} bots to streamline workflows and reduce manual effort across functions.
+  \item \kw{Data-Driven Decision Support:} Prototyped AI-enabled tools and IoT monitoring solutions, accelerating operational insights.
+  \item \kw{Innovation \& Experimentation:} Produced proof-of-concepts (PoCs) to validate feasibility and value; documented outcomes and facilitated handovers to business stakeholders.
+\end{itemize}
+}
+
+\cventry{2018--2021}{Technology Associate}{OneDot Automation}{}{}{
+\begin{itemize}
+  \item \kw{Product Development \& IP:} Invented and prototyped a patented \kw{wireless in-wall smart-home controller}; delivered privacy-focused automation (\kw{Node-RED}/\kw{Node.js}/openHAB).
+  \item \kw{Real-time Tracking:} Engineered a real-time asset/staff tracking solution, integrating IPS with \kw{ESP32} (\kw{Embedded C++}) for reliable location telemetry.
+  \item \kw{Medical Imaging AI:} Deployed a cloud \kw{U-Net} pipeline on \kw{Google Cloud Platform} for chest X-ray GGO detection; packaged inference for scalable use.
+\end{itemize}
+}
+
+\cventry{2019--2022}{Lecturer (Part-time)}{University of the West of England}{}{}{
+\begin{itemize}
+  \item \kw{Teaching \& Labs:} Taught \kw{Computer Vision} fundamentals and led hands-on \kw{MATLAB} labs; created practical exercises that connected theory to real-world problem-solving.
+\end{itemize}
+}
+
+% ---------- EDUCATION ----------
+\section{Education}
+\cventry{2021--2023}{MPhil.\ Research in Machine Vision}{University of the West of England}{}{}{
+Thesis: \emph{3D Printed Object Authentication using Micro and Macro Surface Textures and Geometric}
+}
+\cventry{2016--2018}{MSc.\ Robotics}{University of Bristol}{}{}{Final Project: \emph{Indoor Localisation System using Low Power Bluetooth}}
+\cventry{2013--2016}{BEng.\,(Hons) Electronics}{Anglia Ruskin University (Cambridge Campus)}{}{}{}
+
+
+\pagebreak
+
+% ---------- CAREER HIGHLIGHTS & CERTIFICATIONS ----------
+\section{Career Highlights \& Certifications}
+\begin{itemize}
+  \item Led a smart-factory digital transformation for a FTSE 250, multi-site UK retailer as part of a Continuous Improvement (CI) programme; deployed \kw{OEE} across multiple lines to drive operational excellence.
+  \item Scaled \kw{IIoT} to \kw{350+ assets}, enabling real-time insights, remote monitoring, and diagnostics, contributing to cost savings of \kw{\textsterling{}3M+}.
+  \item Delivered \kw{IIoT factory} deployment for a \kw{global aerospace manufacturer}, enabling secure \kw{IT/OT convergence}, advanced analytics, and digital transformation outcomes.
+  \item Delivered end-to-end \kw{Siemens Insights Hub} deployments (architecture, edge acquisition, analytics, \kw{KPI dashboards}) across diverse manufacturing environments.
+  \item Certified Associate: \kw{Siemens Insights Hub} Presales, Service, and Customer Success.
+  \item Patent holder: \kw{Wireless in-wall smart-home controller} (IoT product design).
+  \item Pursuing (self-study): \kw{AWS Solutions Architect} \& \kw{TOGAF}.
+\end{itemize}
+
+% ---------- KEY SKILLS ----------
+\section{Key Skills}
+% Set label width to the longest label in this section
+\settowidth{\skilllabelwd}{\textbf{Stakeholder Leadership \& Collaboration}}
+
+\skill{IT/OT Solution Architecture}{Design reference architectures and roadmaps for plant-to-enterprise integration (MES, SCADA, PLCs\,\(\leftrightarrow\)\,ERP/Cloud) aligned to \kw{ISA-95}.}
+\skill{Smart Manufacturing \& CI}{Define use cases and deliver value realisation for \kw{OEE} improvement, \kw{predictive maintenance}, \kw{quality analytics}, and \kw{energy optimisation}.}
+\skill{Operations Integration}{\kw{MES/SCADA/PLC} data modelling and interoperability; \kw{historian} integration; standards-based connectivity.}
+\skill{Data Strategy, Analytics \& AI}{Apply \kw{ML} \& \kw{computer vision} for anomaly/predictive quality and edge inference; enable data-driven decisions at scale.}
+\skill{Stakeholder Leadership \& Collaboration}{Lead cross-functional teams; run workshops, \kw{RFIs/RFPs}, and adoption programmes to align technology with business goals.}
+\skill{Delivery Excellence}{Drive rollouts through \kw{documentation}, knowledge transfer, \kw{hypercare}, and post-deployment support for long-term stability.}
+\skill{Security \& Standards}{Working knowledge of \kw{IEC\,62443} and \kw{ISO\,27001} (risk-aware, security-by-design principles).}
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+% Longest label used to set a consistent label width
+\settowidth{\skilllabelwd}{\textbf{Observability \& Dev Practices}}
+
+\skill{Platforms \& Cloud}{\kw{Siemens Insights Hub}; \kw{Google Cloud} (Compute/Storage/AI/ML); Azure IoT (IoT Hub/Edge — exposure/PoCs).}
+\skill{Edge \& Integration}{\kw{Edge gateways}; \kw{Docker}; \kw{Node-RED}; RESTful APIs; webhook integrations; \kw{OPC UA} clients/servers; \kw{MQTT} brokers.}
+\skill{Industrial Connectivity}{\kw{OPC UA}, \kw{MQTT}, \kw{Modbus}, PROFINET, Ethernet/IP; PLC/DCS interfacing and OT data acquisition.}
+\skill{Databases \& Storage}{\kw{SQL} (relational); time-series/\kw{historians}; cloud object storage; embedded DBs (e.g.\ SQLite).}
+\skill{Programming \& ML}{\kw{Python}; \kw{SQL}; \kw{Node.js}/\kw{Node-RED}; \kw{MATLAB}; \kw{Embedded C++}; \kw{TensorFlow}, \kw{Keras}, \kw{PyTorch}; pandas, NumPy, scikit-learn.}
+\skill{Computer Vision}{\kw{OpenCV}; scikit-image; classical \& deep CV pipelines; image pre-/post-processing.}
+\skill{Data Engineering}{Python \kw{ETL}; batch/stream processing; schemas \& serialisation (\kw{JSON}, \kw{CSV}, Parquet); data validation \& QC.}
+\skill{Observability \& Dev Practices}{\kw{Git}; logging/telemetry; API testing; container build workflows; basic CI pipelines.}
+\skill{Visualisation}{Custom dashboards; KPI \& time-series charting; matplotlib; Plotly.}
+
+
+\end{document}
