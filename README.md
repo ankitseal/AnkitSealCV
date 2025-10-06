@@ -5,15 +5,15 @@
 📍 Bristol, UK  
 📱 +44 7454 361133  
 ✉️ ankit.seal@gmail.com  
-� LinkedIn: https://www.linkedin.com/in/ankitseal
+🔗 LinkedIn: https://www.linkedin.com/in/ankitseal
 
 ---
 
 ## 🎯 Professional Summary
 
-Senior IoT Solution Architect for **Industry 4.0**, delivering end-to-end **IIoT**, **edge**, and **IT/OT convergence** from presales and solution design through delivery, services & governance, and customer success. I lead technical qualification and bid/tender/RFP responses, craft win-themes and Statements of Work (SoWs), and present tailored demos and PoCs to ops leaders and CxOs.
+Senior **IoT Solution Architect** for **Industry 4.0** delivering end-to-end **IIoT**, **edge**, and **IT/OT convergence** from **presales** and solution design through delivery, **services & governance**, and **customer success**. I lead technical qualification and **bid/tender / RFP** responses, craft win-themes and **SoWs**, and present tailored **demos / PoCs** to operations leaders and **CxO** stakeholders.
 
-I design scalable, secure architectures integrating **PLCs/SCADA/MES** with analytics platforms, normalising **OPC UA/MQTT/Modbus** for **OEE**, **predictive maintenance**, and quality insights. I establish SLA/OLA and MTTR targets, ensure reliable handovers with runbooks, and drive adoption via success plans, training, and renewals to maximise ARR and measurable outcomes.
+I design scalable architectures integrating **PLCs / SCADA / MES** with analytics platforms, normalising **OPC UA / MQTT / Modbus** telemetry for **OEE**, **predictive maintenance**, and quality insights. I define **SLA / OLA** & **MTTR** targets, produce runbooks and structured handovers, and post-deployment I drive adoption via success plans, enablement, and expansion to maximise **ARR** and measurable outcomes.
 
 ---
 
@@ -28,8 +28,8 @@ I design scalable, secure architectures integrating **PLCs/SCADA/MES** with anal
 - **Data Strategy & Analytics:** Designed pipelines to normalise OPC UA/MQTT/Modbus telemetry and integrated historians/time-series data into Siemens Insights Hub to enable predictive maintenance, OEE, and quality analytics.
 - **Scalability & Performance:** Built containerised edge gateways and services (Docker, Node-RED, Python) for real-time, high-performance industrial data acquisition and analytics across hundreds of assets.
 - **Services & Governance:** Defined SLA/OLA metrics (availability, MTTR) for IIoT services; chaired change-advisory reviews as an SME consultant.
-- **Delivery & Change Management:** Coordinated production, IT, maintenance, and vendor teams; maintained solution documentation, runbooks, and handover packs; facilitated knowledge transfer, cutover activities, and hypercare.
-- **Customer Success & Value Realisation:** Built success plans with executives; tracked adoption and value KPIs; ran roadmap review meetings; delivered training and enablement; managed renewals and expansion opportunities.
+- **Delivery & Change Management:** Coordinated production, IT, maintenance, and vendor teams; maintained solution documentation, runbooks, and handover packs; facilitated knowledge transfer, cutover activities, and hypercare; aligned service SLA/OLA expectations with operations.
+- **Customer Success & Value Realisation:** Built success plans with executives; tracked adoption and value KPIs; ran roadmap review meetings; delivered training and enablement; managed renewals and expansion opportunities to maximise ARR and long-term outcomes.
 - **Strategic Partnership & Outcomes:** Delivered an IIoT factory solution for a global aerospace manufacturer, enabling secure IT/OT convergence, real-time analytics, and digital transformation.
 
 ### IT Solutions Technical Analyst
@@ -81,13 +81,26 @@ Final Project: *Indoor Localisation System using Low Power Bluetooth*
 
 ## 🔑 Key Skills
 
-- IT/OT Solution Architecture (ISA-95 aligned)
-- Smart Manufacturing & CI (OEE, predictive maintenance, quality analytics, energy optimisation)
-- Operations Integration (MES/SCADA/PLC data modelling, historian integration)
-- Data Strategy, Analytics & AI (ML, computer vision, edge inference)
-- Stakeholder Leadership & Collaboration (workshops, RFIs/RFPs, governance)
-- Delivery Excellence (documentation, runbooks, hypercare)
-- Security & Standards (IEC 62443, ISO 27001)
+### IT/OT Solution Architecture
+Design reference architectures and roadmaps for plant-to-enterprise integration (MES, SCADA, PLCs ↔ ERP/Cloud) aligned to **ISA‑95**.
+
+### Smart Manufacturing & CI
+Define use cases and deliver value realisation for **OEE** improvement, **predictive maintenance**, **quality analytics**, and **energy optimisation**.
+
+### Operations Integration
+**MES / SCADA / PLC** data modelling & interoperability; **historian** integration; standards-based connectivity.
+
+### Data Strategy, Analytics & AI
+Apply **ML** & **computer vision** for anomaly / predictive quality & edge inference; enable data-driven decisions at scale.
+
+### Stakeholder Leadership & Collaboration
+Facilitate cross-functional agreement on **vision**, **scope**, and **priorities**; lead workshops, manage risks/issues, and unblock delivery via structured **governance**.
+
+### Delivery Excellence
+Drive rollouts through documentation, knowledge transfer, **hypercare**, and post-deployment support for long-term stability.
+
+### Security & Standards
+Working knowledge of **IEC 62443** and **ISO 27001** (risk-aware, security-by-design principles).
 
 ---
 
