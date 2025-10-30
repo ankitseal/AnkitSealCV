@@ -57,7 +57,7 @@ I design scalable architectures integrating **PLCs / SCADA / MES** with analytic
 
 **MPhil. Research in Machine Vision**  
 *University of the West of England* | 2021 -- 2023  
-Thesis: *3D Printed Object Authentication using Micro and Macro Surface Textures and Geometric*
+Thesis: *3D Printed Object Authentication using Micro and Macro Surface Textures and Geometric Features*
 
 **MSc. Robotics**  
 *University of Bristol* | 2016 -- 2018  
@@ -148,4 +148,4 @@ Grafana; PowerBI; Apache ECharts; custom KPI & time-series dashboards.
 
 ---
 
-*Last updated: October 3, 2025*
+*Last updated: October 30, 2025*
