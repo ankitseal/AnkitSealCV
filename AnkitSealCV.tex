@@ -1,10 +1,10 @@
 % !TeX program = xelatex
-\documentclass[11pt,a4paper,sans]{moderncv} % keep a valid base size
+\documentclass[11pt,a4paper,sans]{moderncv}
 
 % ---- Slight size bump while staying moderncv-safe ----
 \usepackage{anyfontsize}
 \AtBeginDocument{%
-  \fontsize{10pt}{12pt}\selectfont
+  \fontsize{9pt}{11pt}\selectfont
   \recomputelengths
 }
 
@@ -19,20 +19,17 @@
 \usepackage{enumitem}
 \setlist[itemize]{topsep=3pt,itemsep=3pt,parsep=0pt,leftmargin=10pt}
 \usepackage{ragged2e}
-
 \usepackage{xcolor}
+
 \newcommand{\atsinvisible}[1]{%
-  % zero-width box containing white text so humans don't see it,
-  % but ATS / PDF text extractors still can
   \makebox[0pt][l]{\textcolor{white}{#1}}%
 }
 
-
-% ---- Emphasis macro (ATS-safe: bold text only) ----
+% ---- Emphasis macro ----
 \newcommand{\kw}[1]{\textbf{#1}}
-\newcommand{\expsep}{\vspace{3pt plus 1pt minus 1pt}} % tweak 4pt as needed
+\newcommand{\expsep}{\vspace{3pt plus 1pt minus 1pt}}
 
-% ---- Hanging-indent skill macro (used by Key & Technical Skills) ----
+% ---- Hanging-indent skill macro ----
 \newlength{\skilllabelwd}
 \newcommand{\skill}[2]{%
   \par\noindent
@@ -43,22 +40,23 @@
 }
 
 % ---- Identity ----
-\name{Ankit} {Seal}
-% \title{Architecting AI, IIoT \& Data Platforms from Edge to Cloud}
+\name{Ankit}{Seal}
+\title{Senior Solutions Consultant \\ Industrial AI, IoT \& Supply Chain Traceability}
+
 \address{Bristol, UK}
 \phone[mobile]{+44 7454 361133}
 \email{ankit.seal@gmail.com}
 \social[linkedin]{ankitseal}
 \social[github]{ankitseal}
 
-% ---- ATS-friendly PDF metadata (prefilled) ----
+% ---- ATS-friendly PDF metadata ----
 \makeatletter
 \AtBeginDocument{%
   \hypersetup{
-    pdftitle={Architecting AI, IIoT \& Data Platforms from Edge to Cloud},
+    pdftitle={Senior Solutions Consultant | Industrial IoT, Supply Chain and Data Platforms},
     pdfauthor={Ankit Seal},
     pdfsubject={Curriculum Vitae},
-    pdfkeywords={AI Solutions Architect, Industrial IoT, IIoT, OT/IT, Edge Computing, Cloud, OEE, Predictive Maintenance, Quality Analytics, Energy Optimisation, ISA-95, IEC 62443, ISO 27001, Node-RED, Docker, Siemens Insights Hub}
+    pdfkeywords={Senior Solutions Consultant, Senior Solution Advisor, Solutions Architect, Solution Engineering, Enterprise Presales, Technical Presales, Solution Consulting, Value Selling, Value Engineering, Outcome-Led Discovery, Business Case, ROI, TCO, RFI, RFP, Demos, PoC, PoV, Executive Presentations, CxO Advisory, Account Executive Partnership, Deal Co-Ownership, EMEA, Industrial IoT, IIoT, Industrial AI, OT/IT Convergence, IT/OT Architecture, Brownfield Manufacturing, Smart Manufacturing, Industry 4.0, Supply Chain Visibility, Product Traceability, Digital Product Passport, Product Provenance, Anti-Counterfeit, Recall Management, Compliance Readiness, OpenText Business Networks, OpenText Aviator IoT, OpenText Core Product Traceability Service, CPTS, MQTT, OPC UA, Modbus, Edge Computing, Edge Gateways, Industrial Data Architecture, Data Ingestion, Event-Driven Architecture, Exception Management, Operational Visibility, OEE, Predictive Maintenance, MES, SCADA, PLC, Historian, ISA-95, IEC 62443, ISO 27001, Docker, Node-RED, Python, SQL, REST APIs, Webhooks, Grafana, PowerBI, Siemens Insights Hub}
   }%
 }
 \makeatother
@@ -67,28 +65,35 @@
 \makecvtitle
 \atsinvisible{LinkedIn:https://www.linkedin.com/in/ankitseal}
 \atsinvisible{Github:https://github.com/ankitseal}
-\vspace*{-1.5\baselineskip} % tighten gap before the first section
+\vspace*{-1.5\baselineskip}
 
 % ---------- SUMMARY ----------
 \section{Professional Summary}
 \begin{justify}
-Senior \kw{IoT Solution Architect} for \kw{Industry~4.0} delivering end-to-end \kw{IIoT}, \kw{edge}, and \kw{IT/OT convergence} from \kw{presales} and solution design through delivery, \kw{services \& governance}, and \kw{customer success}. I lead technical qualification and \kw{bid/tender}/\kw{RFP} responses, craft win-themes and \kw{SoW}s, and present tailored \kw{demos/PoCs} to ops leaders and \kw{CxO}s. I design scalable architectures integrating \kw{PLCs/SCADA/MES} with analytics platforms, normalising \kw{OPC UA}/\kw{MQTT}/\kw{Modbus} for \kw{OEE}, \kw{predictive maintenance}, and quality insights. I establish \kw{SLA/OLA} and \kw{MTTR} targets, and ensure reliable handovers with runbooks; post-deployment, I drive adoption via success plans, training, and renewals/expansion to maximise \kw{ARR} and measurable outcomes.
+Senior \kw{Solutions Architect} operating as an outcome-led \kw{Solutions Consultant} within \kw{OpenText Business Networks}, focused on \kw{Aviator IoT}, \kw{Core Product Traceability Service (CPTS)}, industrial data, and supply-chain transformation. I support \kw{5 Account Executives} across \kw{EMEA}, co-owning opportunities from discovery through solution validation, executive narrative, architecture design, demos, PoCs, and value framing. My strength is translating manufacturing and supply-chain problems into credible technology roadmaps across IoT, traceability, partner data, product identity, edge integration, and operational visibility. I bring hands-on \kw{OT/IT} and brownfield industrial experience, enabling me to challenge assumptions, bridge plant-floor and enterprise stakeholders, and connect technical capability to measurable business outcomes.
 \end{justify}
-
 
 % ---------- EXPERIENCE ----------
 \section{Experience}
-\cventry{2023--Present}{Senior Industrial IoT Applications Consultant \& Solutions Architect}{CAD-IT UK}{}{}{
+
+\cventry{Jan.\ 2026--Present}{Senior Solutions Architect}{OpenText \textbar{} Business Networks BU}{}{}{
 \begin{itemize}
-  \item \kw{Presales \& Solution Consulting:} Led technical qualification and discovery; authored multiple successful \kw{bids/tender} and \kw{RFP} responses; produced \kw{SoW}s, effort/cost estimates, and \kw{ROI} models; designed and presented tailored \kw{demos/PoCs} to operations leadership and \kw{CxO} stakeholders, driving solution confidence and buy-in.
-  \item \kw{Qualification \& Discovery:} Ran stakeholder workshops to capture requirements, map current-state processes, and prioritise value cases; translated business goals into measurable success criteria and a delivery roadmap.
-  \item \kw{System \& Architecture Design:} Defined \kw{IIoT} reference architectures, onboarding playbooks, and \kw{ISA-95} data models; established standards for \kw{IT/OT} connectivity and vendor integration.
-  \item \kw{Data Strategy \& Analytics:} Designed pipelines to normalise \kw{OPC UA}/\kw{MQTT}/\kw{Modbus} telemetry and integrated historians/time-series data into \kw{Siemens Insights Hub}, enabling \kw{predictive maintenance}, \kw{OEE}, and quality insights.
-  \item \kw{Scalability \& Performance:} Built containerised \kw{edge gateways} and services (\kw{Docker}, \kw{Node-RED}, \kw{Python}) for real-time, high-performance industrial data acquisition and analytics across \kw{hundreds of assets}.
-  \item \kw{Services \& Governance:} Defined \kw{SLA/OLA} metrics (availability, \kw{MTTR}) for \kw{IIoT} services; chaired change-advisory review as an SME consultant.
-  \item \kw{Delivery \& Change Management:} Coordinated production, IT, maintenance, and vendor teams to execute the plan; maintained solution documentation, \kw{runbooks}, and handover packs; facilitated knowledge transfer, cutover activities, and hypercare; aligned service \kw{SLA/OLA} expectations with operations.
-\item \kw{Customer Success \& Value Realisation:} Built success plans with executives; tracked adoption and value KPIs; ran roadmap review meetings; delivered training and enablement; managed renewals and expansion opportunities to maximise \kw{ARR} and long-term outcomes.
-  \item \kw{Strategic Partnership \& Outcomes:} Delivered an \kw{IIoT factory} solution for a \kw{global aerospace manufacturer}, enabling secure \kw{IT/OT convergence}, real-time analytics, and digital transformation in a complex manufacturing environment.
+  \item \kw{Enterprise Solution Consulting:} Support \kw{5 Account Executives} across EMEA, co-owning opportunities from early discovery through technical validation; align customer priorities, buying criteria, solution fit, and business value.
+  \item \kw{Outcome-Led Discovery \& Value Framing:} Lead structured workshops with supply chain, manufacturing, operations, IT, architecture, and executive stakeholders to uncover pain points, quantify operational impact, define success criteria, and shape business-case narratives.
+  \item \kw{Aviator IoT Advisory:} Position and architect AI-enabled IoT use cases across device provisioning, data ingestion, asset and shipment visibility, event-driven exception management, operational intelligence, and integration into enterprise workflows.
+  \item \kw{CPTS \& Traceability Strategy:} Shape product traceability propositions around product identity, provenance, authenticity, anti-counterfeit controls, recall precision, compliance readiness, digital product passports, and partner/customer transparency.
+  \item \kw{Architecture, PoCs \& Executive Communication:} Produce customer-specific architecture diagrams, integration flows, demo narratives, data models, PoC plans, RFI/RFP responses, and executive presentations that connect OpenText capability to measurable business outcomes.
+  \item \kw{Manufacturing \& Supply Chain Domain Depth:} Advise customers across industries, with primary focus on manufacturing, where IoT signals, product identity, partner transactions, OT constraints, and supply-chain workflows need to operate as one connected architecture.
+  \item \kw{Trusted Advisor Role:} Bridge commercial, IT, OT, operations, and architecture teams; challenge assumptions where solution risk exists and recommend practical alternatives grounded in brownfield deployment experience.
+\end{itemize}
+}\expsep
+
+\cventry{2023--Jan.\ 2026}{Senior Industrial IoT Applications Consultant \& Solutions Architect}{CAD-IT UK}{}{}{
+\begin{itemize}
+  \item Led presales discovery, technical qualification, RFP/tender responses, SoWs, estimates, ROI models, and tailored demos/PoCs for industrial customers, operations leaders, and CxO stakeholders.
+  \item Designed \kw{IIoT} and \kw{OT/IT} architectures connecting PLC/SCADA/MES environments to enterprise and cloud platforms using \kw{OPC UA}, \kw{MQTT}, \kw{Modbus}, historians, edge gateways, \kw{Docker}, \kw{Node-RED}, and \kw{Python}.
+  \item Built reference architectures, onboarding playbooks, data models, edge services, and analytics pipelines for \kw{OEE}, predictive maintenance, quality insights, energy optimisation, remote monitoring, and asset-level diagnostics.
+  \item Bridged business, IT, OT, production, maintenance, and vendor teams through architecture reviews, delivery planning, cutover, documentation, runbooks, training, hypercare, SLA/OLA alignment, and operational handover.
 \end{itemize}
 }\expsep
 
@@ -96,22 +101,19 @@ Senior \kw{IoT Solution Architect} for \kw{Industry~4.0} delivering end-to-end \
 \begin{itemize}
   \item \kw{Automation \& Process Optimisation:} Designed and deployed \kw{RPA} bots to streamline workflows and reduce manual effort across functions.
   \item \kw{Data-Driven Decision Support:} Prototyped AI-enabled tools and IoT monitoring solutions, accelerating operational insights.
-  \item \kw{Innovation \& Experimentation:} Produced proof-of-concepts (PoCs) to validate feasibility and value; documented outcomes and facilitated handovers to business stakeholders.
+  \item \kw{Innovation \& Experimentation:} Produced proof-of-concepts to validate feasibility and value; documented outcomes and facilitated handovers to business stakeholders.
 \end{itemize}
 }\expsep
 
 \cventry{2018--2021}{Technology Associate}{OneDot Automation}{}{}{
 \begin{itemize}
-  \item \kw{Product Development \& IP:} Invented and prototyped a patented \kw{wireless in-wall smart-home controller}; delivered privacy-focused automation (\kw{Node-RED}/\kw{Node.js}/openHAB).
-  \item \kw{Real-time Tracking:} Engineered a real-time asset/staff tracking solution, integrating IPS with \kw{ESP32} (\kw{Embedded C++}) for reliable location telemetry.
-  \item \kw{Medical Imaging AI:} Deployed a cloud \kw{U-Net} pipeline on \kw{Google Cloud Platform} for chest X-ray GGO detection; packaged inference for scalable use.
+  \item \kw{Product Development \& IP:} Invented and prototyped a patented \kw{wireless in-wall smart-home controller}; delivered privacy-focused automation using \kw{Node-RED}, \kw{Node.js}, and openHAB.
+  \item \kw{Connected Systems \& Applied AI:} Engineered a real-time asset/staff tracking solution using \kw{ESP32} and \kw{Embedded C++}; also delivered cloud-based ML/computer-vision prototypes on \kw{Google Cloud Platform}.
 \end{itemize}
 }\expsep
 
 \cventry{2019--2022}{Lecturer (Part-time)}{University of the West of England}{}{}{
-\begin{itemize}
-  \item \kw{Teaching \& Labs:} Taught \kw{Computer Vision} fundamentals and led hands-on \kw{MATLAB} labs; created practical exercises that connected theory to real-world problem-solving.
-\end{itemize}
+Taught \kw{Computer Vision} fundamentals and led hands-on \kw{MATLAB} labs, strengthening technical communication, enablement, and training delivery.
 }
 
 % ---------- EDUCATION ----------
@@ -119,49 +121,43 @@ Senior \kw{IoT Solution Architect} for \kw{Industry~4.0} delivering end-to-end \
 \cventry{2021--2023}{MPhil.\ Research in Machine Vision}{University of the West of England}{}{}{
 Thesis: \emph{3D Printed Object Authentication using Micro and Macro Surface Textures and Geometric Features}
 }
-\cventry{2016--2018}{MSc.\ Robotics}{University of Bristol}{}{}{Final Project: \emph{Indoor Localisation System using Low Power Bluetooth}}
+\cventry{2016--2018}{MSc.\ Robotics}{University of Bristol}{}{}{
+Final Project: \emph{Indoor Localisation System using Low Power Bluetooth}
+}
 \cventry{2013--2016}{BEng.\,(Hons) Electronics}{Anglia Ruskin University (Cambridge Campus)}{}{}{}
-
 
 % ---------- CAREER HIGHLIGHTS & CERTIFICATIONS ----------
 \section{Career Highlights \& Certifications}
 \begin{itemize}
-  \item Led a smart-factory digital transformation for a FTSE 250, multi-site UK retailer as part of a Continuous Improvement (CI) programme; deployed \kw{OEE} across multiple lines to drive operational excellence.
+  \item Support \kw{5 Account Executives} across \kw{EMEA} at \kw{OpenText}, shaping outcome-led opportunities across \kw{Aviator IoT}, \kw{CPTS}, supply-chain visibility, product traceability, and manufacturing accounts.
+  \item Advise customers on connected supply-chain and industrial-data use cases spanning IoT signals, product identity, partner data, exception management, compliance readiness, and operational visibility.
   \item Scaled \kw{IIoT} to \kw{350+ assets}, enabling real-time insights, remote monitoring, and diagnostics, contributing to cost savings of \kw{\textsterling{}3M+}.
-  \item Delivered \kw{IIoT factory} deployment for a \kw{global aerospace manufacturer}, enabling secure \kw{IT/OT convergence}, advanced analytics, and digital transformation outcomes.
-  \item Delivered end-to-end \kw{Siemens Insights Hub} deployments (architecture, edge acquisition, analytics, \kw{KPI dashboards}) across diverse manufacturing environments.
+  \item Led smart-factory and aerospace-manufacturing IIoT programmes, including \kw{OEE}, predictive maintenance, secure \kw{OT/IT convergence}, and advanced analytics in brownfield environments.
   \item Certified Associate: \kw{Siemens Insights Hub} Presales, Service, and Customer Success.
-  \item Patent holder: \kw{Wireless in-wall smart-home controller} (IoT product design).
 \end{itemize}
 
 % ---------- KEY SKILLS ----------
 \section{Key Skills}
-% Set label width to the longest label in this section
-\settowidth{\skilllabelwd}{\textbf{Stakeholder Leadership \& Collaboration}}
+\settowidth{\skilllabelwd}{\textbf{Supply Chain \& Traceability Advisory}}
 
-\skill{IT/OT Solution Architecture}{Design reference architectures and roadmaps for plant-to-enterprise integration (MES, SCADA, PLCs\,\(\leftrightarrow\)\,ERP/Cloud) aligned to \kw{ISA-95}.}
-\skill{Smart Manufacturing \& CI}{Define use cases and deliver value realisation for \kw{OEE} improvement, \kw{predictive maintenance}, \kw{quality analytics}, and \kw{energy optimisation}.}
-\skill{Operations Integration}{\kw{MES/SCADA/PLC} data modelling and interoperability; \kw{historian} integration; standards-based connectivity.}
-\skill{Data Strategy, Analytics \& AI}{Apply \kw{ML} \& \kw{computer vision} for anomaly/predictive quality and edge inference; enable data-driven decisions at scale.}
-\skill{Stakeholder Leadership \& Collaboration}{Facilitate cross-functional agreement on \kw{vision}, \kw{scope}, and \kw{priorities}; lead workshops, manage risks/issues, and unblock delivery via data-driven decisions and structured \kw{governance}.}
-\skill{Delivery Excellence}{Drive rollouts through \kw{documentation}, knowledge transfer, \kw{hypercare}, and post-deployment support for long-term stability.}
-\skill{Security \& Standards}{Working knowledge of \kw{IEC\,62443} and \kw{ISO\,27001} (risk-aware, security-by-design principles).}
+\skill{Solution Consulting \& Presales}{Co-own enterprise opportunities with Account Executives; lead discovery, qualification, demos, RFI/RFP support, architecture reviews, PoCs, and customer-facing solution narratives.}
+\skill{Value Engineering}{Translate technical capability into measurable outcomes such as operational visibility, OEE improvement, time-to-value, risk reduction, traceability, recall precision, compliance readiness, and resilience.}
+\skill{Executive \& Technical Advisory}{Level-shift between CxO/VP conversations and technical whiteboarding with IT, OT, architecture, engineering, manufacturing, and supply-chain teams.}
+\skill{OpenText Business Networks}{Shape customer propositions across \kw{Aviator IoT}, \kw{CPTS}, IoT data, product identity, partner ecosystems, supply-chain workflows, and enterprise integration touchpoints.}
+\skill{Industrial Data Architecture}{Design plant-to-enterprise data flows across edge, broker, historian, MES, SCADA, PLC, ERP, cloud, analytics, and traceability layers; align models to operational context and \kw{ISA-95}.}
+\skill{Brownfield OT Delivery}{Understand mixed-vintage assets, uptime constraints, change windows, plant-floor politics, safety reviews, OT/IT ownership gaps, and practical deployment risks.}
+\skill{Supply Chain \& Traceability Advisory}{Translate requirements into solutions for product provenance, authenticity, digital product passports, recall support, partner visibility, and exception-driven decision-making.}
 
 % ---------- TECHNICAL SKILLS ----------
 \section{Technical Skills}
-% Longest label used to set a consistent label width
-\settowidth{\skilllabelwd}{\textbf{Observability \& Dev Practices}}
+\settowidth{\skilllabelwd}{\textbf{Programming \& Automation}}
 
-\skill{Platforms \& Cloud}{\kw{Siemens Insights Hub}; \kw{Google Cloud} (Compute/Storage/AI/ML); Azure IoT (IoT Hub/Edge exposure/PoCs).}\expsep
-\skill{Edge \& Integration}{\kw{Edge gateways}; \kw{Docker}; \kw{Node-RED}; RESTful APIs; webhook integrations; \kw{OPC UA} clients/servers; \kw{MQTT} brokers.}\expsep
-\skill{Web \& API}{Lightweight web apps (\kw{HTML}/JavaScript); back-end services in \kw{Node.js}/\kw{Python}; REST/JSON APIs \& SDKs; API tooling with \kw{Curl}/\kw{Postman}; documentation \& test collections.}\expsep
-\skill{Identity \& Access}{\kw{JWT}-based service auth; role-based access across edge/cloud \kw{SSO} implementation.}\expsep
-\skill{Industrial Connectivity}{\kw{OPC UA}, \kw{MQTT}, \kw{Modbus}, PROFINET, Ethernet/IP; PLC/DCS interfacing and OT data acquisition.}\expsep
-\skill{Databases \& Storage}{\kw{MongoDB}; \kw{RAG} storage solution - vectorDB; time-series/\kw{historians}; cloud object storage; embedded DBs (e.g.\ SQLite).}\expsep
-\skill{Programming \& ML}{\kw{Python}; \kw{SQL}; \kw{Node.js}/\kw{Node-RED}; \kw{MATLAB}; \kw{Embedded C++}; \kw{TensorFlow}, \kw{Keras}, \kw{PyTorch}; pandas, NumPy, scikit-learn.}\expsep
-\skill{Computer Vision}{\kw{OpenCV}; scikit-image; classical \& deep CV pipelines; image pre-/post-processing.}\expsep
-\skill{Data Engineering}{Python \kw{ETL}; batch/stream processing; schemas \& serialisation (\kw{JSON}, \kw{CSV}, Parquet); data validation \& QC.}\expsep
-\skill{Observability \& Dev Practices}{\kw{Git}; logging/telemetry; API testing; container build workflows; basic CI pipelines.}\expsep
-\skill{Visualisation}{Custom dashboards - \kw{Grafana}, \kw{PowerBI}; KPI \& time-series charting; \kw{Apache echarts}.}
+\skill{OpenText Platforms}{\kw{OpenText Business Networks}; \kw{OpenText Aviator IoT}; \kw{OpenText Core Product Traceability Service (CPTS)}; IoT, supply-chain visibility, product traceability, and customer-facing solution design.}\expsep
+\skill{Industrial Connectivity}{\kw{MQTT}, \kw{OPC UA}, \kw{Modbus}, PROFINET, Ethernet/IP; PLC/DCS interfacing; OT data acquisition; historian and time-series integration.}\expsep
+\skill{Edge \& Integration}{\kw{Edge gateways}; \kw{Docker}; \kw{Node-RED}; RESTful APIs; webhooks; IoT ingestion; data normalisation; integration flows; lightweight services.}\expsep
+\skill{Platforms \& Cloud}{\kw{Siemens Insights Hub}; Google Cloud Compute/Storage/AI/ML; Azure IoT exposure and PoCs; cloud and edge architecture patterns.}\expsep
+\skill{Programming \& Automation}{\kw{Python}; \kw{SQL}; \kw{Node.js}/\kw{Node-RED}; \kw{Embedded C++}; Bash/PowerShell exposure; scripting for demos, integrations, and customer PoCs.}\expsep
+\skill{Data Engineering \& Storage}{Python \kw{ETL}; batch/stream processing; \kw{JSON}, \kw{CSV}, Parquet; \kw{MongoDB}; vector/RAG storage exposure; time-series data and cloud object storage.}\expsep
+\skill{Observability \& Visualisation}{\kw{Git}; logging/telemetry; API testing; container build workflows; basic CI pipelines; \kw{Grafana}, \kw{PowerBI}, and KPI/time-series dashboards.}
 
 \end{document}
